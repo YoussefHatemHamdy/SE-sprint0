@@ -1,0 +1,18 @@
+git init
+git add section1.1.txt
+git add section3.1.txt
+git add section5.1.txt
+git commit -m"added 3 files"
+git rm section3.1.txt --cached
+git reset
+git commit -m"reset to before file deletion"
+git remote add seSprint0 https://github.com/YoussefHatemHamdy/SE-sprint0
+git push seSprint0 master
+git branch ReadMe
+git checkout ReadMe
+git add README.md
+git commit -m"addedREADME.md to ReadMe branch"
+git checkout master
+git merge ReadMe
+git add AllMyCommands.txt
+git commit -m"added AllMyCommands.txt"
